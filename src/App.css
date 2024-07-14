@@ -1,0 +1,80 @@
+body,
+html {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 300px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border: 10%;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 10px 6px 10px #888888;
+  height: 50vh;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #c3b2e8d0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #34e3d4;
+}
+.resume {
+  height: 50vh;
+  width: 600px;
+  padding: 20px; /* Add padding for inner content */
+  border: 2px solid #ccc; /* Reduce border width and use lighter color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soften the box shadow */
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column;
+}
+
+.resume .personal,
+.resume .education,
+.resume .experience {
+  margin-bottom: 20px;
+}
+.name {
+  font-weight: bolder;
+}
+.resume p {
+  margin: 5px 0;
+  color: #0e0d0d; /* Medium-dark text color */
+}
+
+.resume .education,
+.resume .experience {
+  border-top: 1px solid #ccc; /* Separate sections with a thin border */
+  padding-top: 10px;
+}
+.company {
+  font-family: cursive;
+}
+.resume .experience p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last paragraph in experience section */
+}
