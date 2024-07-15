@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../styles/general.css";
+
 function Education({ data, setData }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -10,8 +12,8 @@ function Education({ data, setData }) {
     });
   };
   return (
-    <div className="container">
-      <div className="form-container">
+    <div>
+      <div className="edu">
         <h2>Experience:</h2>
         <label>
           Position:

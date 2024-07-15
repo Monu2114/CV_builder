@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/general.css";
 export default function Education({ data, setData }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -9,8 +10,8 @@ export default function Education({ data, setData }) {
     }));
   };
   return (
-    <div className="container">
-      <div className="form-container">
+    <div>
+      <div class="edu">
         <h2>Education Details:</h2>
         <label>
           College:

@@ -12,6 +12,7 @@ export default function App() {
     if (page === 1) return;
     setPage(page - 1);
   };
+
   const [data, setData] = useState({
     fname: "",
     lname: "",
@@ -27,6 +28,7 @@ export default function App() {
         {page === 1 && <GeneralInfo data={data} setData={setData} />}
         {page === 2 && <Education data={education} setData={setEducation} />}
         {page === 3 && <Experience data={experience} setData={setExperience} />}
+
         <div className="button">
           <button onClick={handlePrev} disabled={page === 1}>
             Prev
@@ -50,8 +52,8 @@ export default function App() {
           <p>{education.graduation}</p>
         </div>
         <div className="experience">
-          <p class="company">Company: {experience.company}</p>
-          <p>Position: {experience.position}</p>
+          <p class="company"> {experience.company}</p>
+          <p>{experience.position}</p>
           <p>Start Date: {experience.start}</p>
           <p>End Date: {experience.end}</p>
           <p>Work Summary: {experience.work}</p>
